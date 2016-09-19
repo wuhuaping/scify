@@ -1,4 +1,4 @@
-from scify.ethjsonrpc import EthJsonRpc
+from scify.ethjsonrpc import EtcJsonRpc
 
 methods = [
     'web3_clientVersion',
@@ -21,7 +21,7 @@ methods = [
 #    'shh_newGroup',
 ]
 
-c = EthJsonRpc()
+c = EtcJsonRpc()
 print len(methods)
 for m in methods:
     meth = getattr(c, m)

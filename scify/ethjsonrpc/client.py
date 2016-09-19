@@ -3,12 +3,12 @@ import warnings
 
 import requests
 from requests.exceptions import ConnectionError as RequestsConnectionError
-from ethereum import utils
-from ethereum.abi import encode_abi, decode_abi
+from ethereumc import utils
+from ethereumc.abi import encode_abi, decode_abi
 
-from ethjsonrpc.constants import BLOCK_TAGS, BLOCK_TAG_LATEST
-from ethjsonrpc.utils import hex_to_dec, validate_block
-from ethjsonrpc.exceptions import (ConnectionError, BadStatusCodeError,
+from scify.ethjsonrpc.constants import BLOCK_TAGS, BLOCK_TAG_LATEST
+from scify.ethjsonrpc.utils import hex_to_dec, validate_block
+from scify.ethjsonrpc.exceptions import (ConnectionError, BadStatusCodeError,
                                    BadJsonError, BadResponseError)
 
 GETH_DEFAULT_RPC_PORT = 8545
@@ -17,7 +17,7 @@ PARITY_DEFAULT_RPC_PORT = 8080
 PYETHAPP_DEFAULT_RPC_PORT = 4000
 
 
-class EthJsonRpc(object):
+class EtcJsonRpc(object):
 
     DEFAULT_GAS_PER_TX = 90000
     DEFAULT_GAS_PRICE = 50 * 10**9  # 50 gwei

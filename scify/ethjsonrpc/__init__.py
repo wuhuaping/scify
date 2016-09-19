@@ -1,6 +1,6 @@
-from scify.ethjsonrpc.client import (EthJsonRpc, ETH_DEFAULT_RPC_PORT,
-                               GETH_DEFAULT_RPC_PORT,
-                               PYETHAPP_DEFAULT_RPC_PORT)
+from scify.ethjsonrpc.client import (EtcJsonRpc, ETH_DEFAULT_RPC_PORT,
+                                     GETH_DEFAULT_RPC_PORT,
+                                     PYETHAPP_DEFAULT_RPC_PORT)
 
 from scify.ethjsonrpc.exceptions import (ConnectionError, BadStatusCodeError,
                                    BadJsonError, BadResponseError)
